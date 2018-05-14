@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/com_kakao_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kakaotalk_icon"  >
+
+    </com.kakao.usermgmt.LoginButton>
+
+    <LinearLayout
+        android:id="@+id/success_layout"
+        android:layout_width="410dp"
+        android:layout_height="403dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_img"
+            android:layout_width="95dp"
+            android:layout_height="115dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="nickname"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="eamil_address"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="로그아웃"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/govending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0BF2DD"
+            android:text="vendingmachine"
+            android:textColor="#0f0f0f"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

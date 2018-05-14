@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendingActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/candy"
+        android:layout_alignParentBottom="true"
+        android:text="뒤로가기" />
+
+    <TextView
+        android:id="@+id/mainmessage"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vending Machine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageView
+        android:id="@+id/candy"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/mainmessage"
+        android:layout_marginTop="83dp"
+        app:srcCompat="@drawable/cnady" />
+
+    <ImageView
+        android:id="@+id/choko"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignEnd="@+id/mainmessage"
+        android:layout_alignTop="@+id/candy"
+        app:srcCompat="@drawable/mandn" />
+
+    <ImageView
+        android:id="@+id/chokobar"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/mainmessage"
+        android:layout_marginBottom="115dp"
+        app:srcCompat="@drawable/twix" />
+
+    <ImageView
+        android:id="@+id/haribo"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignStart="@+id/choko"
+        android:layout_alignTop="@+id/chokobar"
+        app:srcCompat="@drawable/haribo" />
+
+    <TextView
+        android:id="@+id/candytext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/mainmessage"
+        android:layout_marginTop="213dp"
+        android:text="사탕 수량" />
+
+    <TextView
+        android:id="@+id/chokobartext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/mainmessage"
+        android:layout_marginBottom="63dp"
+        android:text="초코바수량" />
+
+    <TextView
+        android:id="@+id/haribotext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/choko"
+        android:layout_alignTop="@+id/chokobartext"
+        android:text="하리보수량" />
+
+    <TextView
+        android:id="@+id/chokotext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/choko"
+        android:layout_alignTop="@+id/candytext"
+        android:text="초코수량" />
+
+    <Button
+        android:id="@+id/candycountbutton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/candytext"
+        android:layout_toEndOf="@+id/candytext"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/chobarcountbutton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/candy"
+        android:layout_alignTop="@+id/chokobartext"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/haribocountbutton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/mainmessage"
+        android:layout_alignTop="@+id/chokobartext"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/chokocountbutton"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/mainmessage"
+        android:layout_alignTop="@+id/candytext"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/choko"
+        android:text="게시판" />
+</RelativeLayout>

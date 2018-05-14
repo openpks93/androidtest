@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/beliverView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignTop="@+id/letitgoView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/believerimage" />
+
+
+    <ImageView
+        android:id="@+id/dazuView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignTop="@+id/flowerView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/danzakuduroimage" />
+
+    <ImageView
+        android:id="@+id/letitgoView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/letitgoimage" />
+
+    <ImageView
+        android:id="@+id/roundView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/beliverView"
+        app:srcCompat="@drawable/roundandroundimage" />
+
+    <ImageView
+        android:id="@+id/flowerView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/yearsView"
+        app:srcCompat="@drawable/flowerimage" />
+
+
+    <ImageView
+        android:id="@+id/yearsView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="155dp"
+        app:srcCompat="@drawable/yearsoldimage" />
+
+    <ImageView
+        android:id="@+id/sharkView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignTop="@+id/oneView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sharkimage" />
+
+    <ImageView
+        android:id="@+id/oneView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/pmaconeimage" />
+
+    <ImageView
+        android:id="@+id/handsView"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/sharkView"
+        app:srcCompat="@drawable/handsimage" />
+
+</RelativeLayout>
